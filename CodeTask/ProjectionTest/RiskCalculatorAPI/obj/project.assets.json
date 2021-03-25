@@ -1,0 +1,138 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "DataValidation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/DataValidation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataValidation.dll": {}
+        }
+      },
+      "GrowthCalculator/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "DataValidation": "1.0.0",
+          "Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GrowthCalculator.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GrowthCalculator.dll": {}
+        }
+      },
+      "Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DataValidation/1.0.0": {
+      "type": "project",
+      "path": "../DataValidation/DataValidation.csproj",
+      "msbuildProject": "../DataValidation/DataValidation.csproj"
+    },
+    "GrowthCalculator/1.0.0": {
+      "type": "project",
+      "path": "../GrowthCalculator/GrowthCalculator.csproj",
+      "msbuildProject": "../GrowthCalculator/GrowthCalculator.csproj"
+    },
+    "Models/1.0.0": {
+      "type": "project",
+      "path": "../Models/Models.csproj",
+      "msbuildProject": "../Models/Models.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "DataValidation >= 1.0.0",
+      "GrowthCalculator >= 1.0.0",
+      "Models >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\sptip\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\sptip\\source\\repos\\ProjectionTest\\RiskCalculatorAPI\\RiskCalculatorAPI.csproj",
+      "projectName": "RiskCalculatorAPI",
+      "projectPath": "C:\\Users\\sptip\\source\\repos\\ProjectionTest\\RiskCalculatorAPI\\RiskCalculatorAPI.csproj",
+      "packagesPath": "C:\\Users\\sptip\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sptip\\source\\repos\\ProjectionTest\\RiskCalculatorAPI\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\sptip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://localhost:5555/v3/index.json": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\Users\\sptip\\source\\repos\\ProjectionTest\\DataValidation\\DataValidation.csproj": {
+              "projectPath": "C:\\Users\\sptip\\source\\repos\\ProjectionTest\\DataValidation\\DataValidation.csproj"
+            },
+            "C:\\Users\\sptip\\source\\repos\\ProjectionTest\\GrowthCalculator\\GrowthCalculator.csproj": {
+              "projectPath": "C:\\Users\\sptip\\source\\repos\\ProjectionTest\\GrowthCalculator\\GrowthCalculator.csproj"
+            },
+            "C:\\Users\\sptip\\source\\repos\\ProjectionTest\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\sptip\\source\\repos\\ProjectionTest\\Models\\Models.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
